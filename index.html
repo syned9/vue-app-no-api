@@ -168,7 +168,7 @@ var demo = new Vue({
 			this.nbConges = Math.trunc((this.nbJourContrat*2.08)/28)+1
 			if(this.nbConges > 25) {
 				this.nbConges = 25
-			} else if(this.nbConges === 1) {
+			} else if(this.nbJourContrat < 28) {
                 this.nbConges = 0
             }
 			return this.nbConges
